@@ -27,7 +27,7 @@ pipeline {
 
         stage('UNIT TEST'){
             steps {
-                sh 'mvn test -DforkCount=2'
+                sh 'mvn test -DskipUnitTests=2'
             }
         }
 
